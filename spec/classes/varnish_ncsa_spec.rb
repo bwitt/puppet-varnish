@@ -30,6 +30,7 @@ describe 'varnish::ncsa', type: :class do
 [Service]
 Type=forking
 KillMode=process
+RuntimeDirectory=varnishncsa
 ExecStart=
 ExecStart=/usr/bin/varnishncsa -a -w /var/log/varnish/varnishncsa.log -D -P /run/varnishncsa/varnishncsa.pid
 

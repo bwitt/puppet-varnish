@@ -4,6 +4,7 @@
 [Service]
 Type=forking
 KillMode=process
+RuntimeDirectory=varnishncsa
 ExecStart=
 ExecStart=/usr/bin/varnishncsa <%= $daemon_opts %>
 
